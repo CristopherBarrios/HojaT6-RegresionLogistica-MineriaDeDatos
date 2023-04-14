@@ -1,0 +1,8 @@
+---
+title: "RegresionLogistica"
+author: "Cristopher Barrios, Carlos Daniel Estrada"
+date: "2023-04-14"
+output:
+  pdf_document: default
+  html_document: default
+---
