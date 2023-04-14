@@ -6,7 +6,7 @@ Creado por:
 - Carlos Daniel Estrada
 
 
-[Instrucciones](./HojadeTrabajo5.NB_2023.pdf)
+[Instrucciones](./HojadeTrabajo6.MRLog_2023.pdf)
 
 [PDF - Informe](./RegresionLogistica.pdf)
 
