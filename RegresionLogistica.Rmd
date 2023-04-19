@@ -231,7 +231,36 @@ totalTm3
 ```
 
 ### 9. Determine cual de todos los modelos es mejor, puede usar AIC y BIC para esto, además de los parámetros de la matriz de confusión y los del profiler.
+```{r}
+AICmodelo <- AIC(modelo)
+BICmodelo <- BIC(modelo)
 
+print("Modelo 1 AIC: ")
+AICmodelo
+print("Modelo 1 BIC: ")
+BICmodelo
+```
+
+```{r}
+AICmodelo2 <- AIC(modelo2)
+BICmodelo2 <- BIC(modelo2)
+
+print("Modelo 2 AIC: ")
+AICmodelo2
+print("Modelo 2 BIC: ")
+BICmodelo2
+```
+
+```{r}
+AICmodelo3 <- AIC(modelo3)
+BICmodelo3 <- BIC(modelo3)
+
+print("Modelo 3 AIC: ")
+AICmodelo3
+print("Modelo 3 BIC: ")
+BICmodelo3
+```
+Después de realizar el análisis utilizando AIC y BIC, se puede concluir que el Modelo 1 es el mejor modelo ya que tiene el menor valor de AIC y BIC. En este caso se recomienda utilizar el Modelo 1 para predecir y clasificar los datos.
 
 ### 10. Haga un modelo de árbol de decisión, uno de Random Forest y uno de Naive Bayes usando la misma variable respuesta y los mismos predictores que el mejor de los modelos de Regresión Logística.
 
