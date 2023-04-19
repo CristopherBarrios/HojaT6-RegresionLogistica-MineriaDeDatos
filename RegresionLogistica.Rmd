@@ -3,8 +3,8 @@ title: "RegresionLogistica"
 author: "Cristopher Barrios, Carlos Daniel Estrada"
 date: "2023-04-14"
 output:
-  html_document: default
   pdf_document: default
+  html_document: default
 ---
 
 ```{r}
@@ -172,12 +172,12 @@ ggplot(data = train[,c("GrLivArea","datos3")], aes(x = GrLivArea, y = datos3)) +
 
 
 ### 4. Analice el modelo. Determine si hay multicolinealidad en las variables, y cuáles son las que aportan al modelo, por su valor de significación. Haga un análisis de correlación de las variables del modelo y especifique si el modelo se adapta bien a los datos.
-```{r}
+```{r warning=FALSE, unload=TRUE}
 
 dat1 <- data.frame(datos[,c("LotFrontage","LotArea","GrLivArea","YearBuilt","BsmtUnfSF","TotalBsmtSF","X1stFlrSF","GarageYrBlt","GarageArea","YearRemodAdd", "SalePrice")])
 chart.Correlation(dat1)
 ```
-
+La observación de la tabla de correlación revela la existencia de variables que presentan altos índices de correlación, lo que indica que estas variables son relevantes para el modelo de regresión lineal y pueden ser útiles para predecir el valor de la variable dependiente. Asimismo, la presencia de estas variables con altos índices de correlación sugiere que el modelo de regresión lineal se ajusta bien a los datos asociados con estas variables.
 
 ### 5. Utilice el modelo con el conjunto de prueba y determine la eficiencia del algoritmo para clasificar.
 ```{r}
@@ -196,9 +196,14 @@ prediction2
 prediction3 <- predict(modelo3, test)
 prediction3
 ```
-
+Se puede observar el resultado de las variables de respuesta a través de la predicción realizada.
 
 ### 6. Explique si hay sobreajuste (overfitting) o no (recuerde usar para esto los errores del conjunto de prueba y de entrenamiento). Muestre las curvas de aprendizaje usando los errores de los conjuntos de entrenamiento y prueba.
+
+```{r}
+
+```
+Cuando se presenta el fenómeno del sobreajuste (overfitting), es posible que esto se deba a que ciertas variables, en particular aquellas que tienen una correlación baja entre sí, estén influyendo demasiado en el modelo.
 
 ### 7. Haga otros dos modelos cambiando las variables predictoras de acuerdo con la significación de los coeficientes en el primer modelo. Explique por qué seleccionó las variables que uso para cada modelo.
 
