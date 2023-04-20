@@ -8,6 +8,6 @@ Creado por:
 
 [Instrucciones](./HojadeTrabajo6.MRLog_2023.pdf)
 
-[PDF - Informe](./RegresionLogistica.pdf)
+[PDF - Informe](./HojaT6-RegresionLogistica-MineriaDeDatos.pdf)
 
 [RMD - Codigo](./RegresionLogistica.Rmd)
