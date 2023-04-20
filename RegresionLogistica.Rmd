@@ -94,6 +94,7 @@ test<-datos[-corte,]
 head(train)
 head(test)
 ```
+Se crean tres variables dicotómicas grupo, grupo2, y grupo3, las cuales tienen valores 0 o 1, dependiendo de si la vivienda es cara, intermedia, o económica.
 
 ### 2. Use los mismos conjuntos de entrenamiento y prueba que utilizó en las hojas anteriores.
 ```{r}
