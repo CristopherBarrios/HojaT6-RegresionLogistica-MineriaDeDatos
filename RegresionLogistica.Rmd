@@ -235,6 +235,10 @@ totalTm2
 print("Tiempo de entrenamiento modelo casas baratas: ")
 totalTm3
 ```
+En cuanto a los resultados, se puede observar que el tiempo de entrenamiento de los modelos es bastante rápido, con un promedio de alrededor de 0.12 a 0.14 segundos por modelo. Esto indica que los modelos son bastante eficientes en términos de tiempo.
+
+En cuanto a la evaluación de la efectividad de los modelos, esto se realiza utilizando una matriz de confusión. 
+
 
 ### 9. Determine cual de todos los modelos es mejor, puede usar AIC y BIC para esto, además de los parámetros de la matriz de confusión y los del profiler.
 ```{r}
