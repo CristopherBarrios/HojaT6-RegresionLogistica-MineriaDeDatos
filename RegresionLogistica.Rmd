@@ -158,8 +158,16 @@ ggplot(data = train[,c("GrLivArea","datos2")], aes(x = GrLivArea, y = datos2)) +
 ```
 
 ```{r}
+```
+
+
+in```{r}
 ggplot(data = train[,c("GrLivArea","datos3")], aes(x = GrLivArea, y = datos3)) +
-  geom_point(aes(color = as.factor(datos3)), shape = 1) + 
+```
+
+
+```{r}
+geom_point(aes(color = as.factor(datos3)), shape = 1) + 
   geom_smooth(method = "glm",
               method.args = list(family = "binomial"),
               color = "pink",
